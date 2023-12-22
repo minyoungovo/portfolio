@@ -11,6 +11,8 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/mail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -57,7 +59,7 @@
                             </li>
                             <li>
                                 <div class="profile-name">학력</div>
-                                <div class="profile-info">울산과학대학교 컴퓨터정보학부 소프트웨어 개발 전공(3년제)</div>
+                                <div class="profile-info">울산과학대학교 컴퓨터정보학부 소프트웨어개발전공(3년제)</div>
                             </li>
                             <li>
                                 <div class="profile-name">자격증</div>
@@ -69,13 +71,13 @@
                             <li>
                                 <div class="profile-name">수료</div>
                                 <div class="profile-info">
-                                    SBS아카데미컴퓨터아트학원 UIUX 웹퍼블리셔 양성과정 이수(3개월) <br/>
-                                    패스트캠퍼스강남학원 나도 할 수 있는 Java&Spring 웹 개발 종합반 이수(2개월)
+                                    SBS아카데미컴퓨터아트학원 UIUX 웹퍼블리셔 양성과정(3개월) <br/>
+                                    패스트캠퍼스강남학원 나도 할 수 있는 Java&Spring 웹 개발 종합반(2개월)
                                 </div>
                             </li>
                             <li>
                                 <div class="profile-name">실습</div>
-                                <div class="profile-info">엔정보기술 회사 현장실습(4개월)</div>
+                                <div class="profile-info">엔정보기술 현장실습(4개월)</div>
                             </li>
                             <li>
                                 <div class="profile-name">수상</div>
@@ -83,7 +85,7 @@
                             </li>
                             <li>
                                 <div class="profile-name">경력</div>
-                                <div class="profile-info">엔정보기술 회사 백엔드 개발자(1년 4개월)</div>
+                                <div class="profile-info">엔정보기술 백엔드 개발(1년 4개월)</div>
                             </li>
                         </ul>
                     </div>
@@ -103,78 +105,231 @@
                     SKILL
                 </div>
                 <div class="skill-in">
-                    <div class="box">
-                        <div class="subtitle">
-                            front end
+                    <div class="skill-box1">
+                        <div class="box-wrap">
+                            <div class="subtitle">front End</div>
+                            <div class="box">
+                                <div class="skill-lang">
+                                    <div class="box-title">language</div>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/html.png" alt="html icon"></div>
+                                                <figcaption>
+                                                    <p>HTML</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/css.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>css</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/js.png" alt="js icon"></div>
+                                                <figcaption>
+                                                    <p>Javascript</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="skill-plugin">
+                                    <div class="box-title">Plugin</div>
+                                    <ul class="">
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/jquery.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Jquery</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/bootstrap.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>BootStrap</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-tool">
+                                    <div class="box-title">Tool</div>
+                                    <ul class="">
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/vscode.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Visual Studio Code</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="skill-box2">
+                                <div class="subtitle">Version Control</div>
+                                <div class="box">
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/svn.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>SVN</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/github.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>GitHub</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                       <ul>
-                        <li>
-                            HTML
-                        </li>
-                        <li>
-                            CSS
-                        </li>
-                        <li>
-                            Javascript
-                        </li>
-                       </ul>
-                        <div class="subtitle">
-                            plugin
+                        <div class="box-wrap">
+                            <div class="subtitle">Back End</div>
+                            <div class="box">
+                                <div class="skill-lang">
+                                    <div class="box-title">language</div>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/php.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Php</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/java.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Java</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/jsp.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Jsp</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/spring.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Spring</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>  
+                                <div class="skill-db">
+                                    <div class="box-title">DB</div>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/oracle.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Oracle</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/mysql.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>MySql</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="skill-server">
+                                    <div class="box-title">Server</div>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/tomcat.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Apache Tomcat</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="skill-tool">
+                                    <div class="box-title">Tool</div>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/eclipse.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Eclipse</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-framework">
+                                    <div class="box-title">FrameWork</div>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/mybatis.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>MyBatis</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/ibatis.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>iBatis</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/maven.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>Maven</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <div><img src="./images/icon/egovframe.png" alt="css icon"></div>
+                                                <figcaption>
+                                                    <p>eGovFrame</p>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="">
-                            <li>
-                                Jquery
-                            </li>
-                            <li>
-                               BootStrap
-                            </li>
-                        </ul>
-                        <div class="subtitle">
-                            Tool
-                        </div>
-                        <ul class="">
-                            <li>
-                                Visual Studio Code
-                            </li>
-                        </ul>
                     </div>
-                    <div class="box">
-                        <div class="subtitle">DB</div>
-                        <ul>
-                            <li>Java</li>
-                            <li>Jsp</li>
-                            <li>Spring</li>
-                            <li>Php</li>
-                        </ul>
+                    
 
-                        <div class="subtitle">Server</div>
-                        <ul>
-                            <li>Apache Tomcat</li>
-                        </ul>
-
-                        <div class="subtitle">Tool</div>
-                        <ul>
-                            <li>Eclipse</li>
-                        </ul>
-
-
-                        <div class="subtitle">FrameWork</div>
-                        <ul>
-                            <li>MyBatis</li>
-                            <li>iBatis</li>
-                            <li>Maven</li>
-                            <li>eGovFrame</li>
-                        </ul>
-                        
-                    </div>
-
-                    <div class="box">
-                        <div class="subtitle">Version Control</div>
-                        <ul>
-                            <li>SVN</li>
-                            <li>GitHub</li>
-                        </ul>
-                    </div>
+                   
 
                     <!-- 그래프 영역
                          <ul class="skill_list">
@@ -236,22 +391,35 @@
                 <ul class="items">
                     <li>
                         <!-- <img src="" alt="dd"> -->
-                        <div class="test-img"></div>
+                        <div class="project-img">
+                            <img src="./images/test-img.jpg" alt="">
+                        </div>
+                        <div class="box">
+                            <div class="box-top">
+                                <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
+                                <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                            </div>
+                            <p class="project-info">이 곳에 내용을 입력하세요.</p>
+                            <div class="box-bottom">
+                                <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
+                                <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
+                                <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <img src="" alt="dd"> -->
+                        <div class="project-img"></div>
                         <div class="box"></div>
                     </li>
                     <li>
                         <!-- <img src="" alt="dd"> -->
-                        <div class="test-img"></div>
+                        <div class="project-img"></div>
                         <div class="box"></div>
                     </li>
                     <li>
                         <!-- <img src="" alt="dd"> -->
-                        <div class="test-img"></div>
-                        <div class="box"></div>
-                    </li>
-                    <li>
-                        <!-- <img src="" alt="dd"> -->
-                        <div class="test-img"></div>
+                        <div class="project-img"></div>
                         <div class="box"></div>
                     </li>
                 </ul>
@@ -277,7 +445,7 @@
         <div id="end">
             <div class="container">
                 <div class="title">CONTACT AS</div>
-                <div style="margin:0 auto; width:800px ;">
+                <div class="form-container">
                     <form id="form">
                         <div class="field">
                             <label for="from_name">from_name</label>
@@ -299,39 +467,18 @@
                             <label for="reply_to">reply_to</label>
                             <input type="text" name="reply_to" id="reply_to">
                         </div>
-
-                        <input type="submit" id="button" value="Send Email">
+                        <input type="submit" id="button" class="btn" value="Send Email">
                     </form>
-                    <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-                    <script type="text/javascript">
-                        emailjs.init('PztAfceeb8TwSFfQl')
-
-                        const btn = document.getElementById('button');
-
-                        document.getElementById('form')
-                            .addEventListener('submit', function (event) {
-                                event.preventDefault();
-
-                                btn.value = 'Sending...';
-
-                                const serviceID = 'service_ew9yfiy';
-                                const templateID = 'template_kztulpu';
-
-                                emailjs.sendForm(serviceID, templateID, this)
-                                    .then(() => {
-                                        btn.value = 'Send Email';
-                                        alert('메일보내기 성공');
-                                    }, (err) => {
-                                        btn.value = 'Send Email';
-                                        alert(JSON.stringify(err));
-                                    });
-                            });
-                    </script>
+                    
+                </div>
+                <div class="end-info">
+                    Thank You! 😊
                 </div>
             </div>
         </div>
+        <footer>
+            fff
+        </footer>
     </div>
     <!-- 퀵메뉴 -->
     <div id="q_mn">
@@ -340,7 +487,7 @@
             <li><a href="#">Profile</a></li>
             <li><a href="#">Skill</a></li>
             <li><a href="#">project1</a></li>
-            <li><a href="#">finish</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
 </body>

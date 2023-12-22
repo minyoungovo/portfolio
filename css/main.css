@@ -17,21 +17,25 @@
 }
 
 #wrap>div:nth-child(3) {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
+    /* background-color: rgb(224, 225, 230); */
+    /* background: linear-gradient( to bottom, rgb(236, 255, 243), rgb(135, 206, 209) ); */
+    
 }
 
 #wrap>div:nth-child(4) {
-    background-color: rgb(255, 229, 196);
+    /* background-color: rgb(255, 229, 196); */
 }
 
 #wrap>div:nth-child(5) {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(239, 239, 239);
 }
 
 /* #wrap>div>div */
 .container {
     margin: 0 auto;
-    width: 1500px;
+    max-width: 1500px;
+    width: 90%;
     padding-bottom: 64px;
     /* height: 100vh; */
     /* background-color:rgba(255, 244, 146, 0.5); */
@@ -128,6 +132,7 @@
     justify-content: space-between;
     line-height: 2.5em;
     font-size: 1.125em;
+    font-weight: 300;
 }
 #profile .profile-name{
     width: 15%;
@@ -146,30 +151,141 @@
     margin-left: 5%;
     width: 50%;
     font-size: 1.125em;
+    font-weight: 300;
 }
 
-#skill {}
+#skill {
+
+}
 
 #skill .skill-in {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    /* justify-content: space-around; */
     /* justify-content: space-between; */
     /* align-items: center; */
+}
+#skill .box > div{
+    padding: 16px 0;
+}
+#skill .skill-plugin{
+    width: 60%;
+}
+#skill .skill-box1 .box-wrap:nth-child(1) .skill-tool{
+    width: 35%;
+}
+#skill .box figcaption{
+    display: none;
+}
+#skill .skill-box1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 90%;
+
+}
+#skill .skill-box1 .box-wrap{
+    /* width: 100%; */
+    /* width: 40%; */
+    width: calc(100% / 2 - 24px);
+    margin-right: 48px;
+}
+#skill .skill-box1 .box-wrap:last-child{
+    margin-right: 0px;
+}
+#skill .skill-box2 .box{
+    justify-content: center !important; 
+}
+#skill .skill-box2 ul{
+    width: 100%;
+}
+
+#skill .skill-db, #skill .skill-server , #skill .skill-tool{
+    width: calc(100% / 4 - 16px);
+}
+#skill .skill-db{
+    width: calc((100% / 4 - 16px) * 2);
 }
 #skill .subtitle{
     padding-bottom: 16px;
 }
-#skill .skill_list {
+#skill .skill-box1 .box{
     display: flex;
-}
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(221, 221, 229, 0.5);
+    box-shadow: 4px 4px 16px #d2d2db9a;
+    border:1px solid #d2d2db9a;
 
-#skill .skill_list>li {
-    /* float: left; */
-    margin-right: 100px;
+}
+#skill .skill-box1 .box .skill-lang, #skill .skill-box1 .box .skill-framework{
+    width: 100%;
+}
+#skill .skill-box1 .box:first-child div:not(div:first-child){
+    /* width: 48%; */
+}
+#skill .skill-box2{
+    width: 100%
+}
+#skill ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+    border: 1px solid rgba(219, 219, 219, 0.5);
+    padding: 12px 0;
+    border-radius: 10px ;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 4px 4px 16px rgba(229, 229, 229, .8);
+    /* background-color: rbga; */
+    padding: 4% 0 ;
+}
+#skill li{
+    height: 120px;
     text-align: center;
 }
+#skill figure{
+    /* width: 120px ; */
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#skill figure > div{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#skill figure img{
+    /* width: 100%; */
+    width: 80px;
+}
+#skill figcaption{
+    margin-top: 16px;
+    display: flex;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.89m;
+    font-weight: 300;
+}
 
-#skill .skill_list>li>div {
+/* #skill .skill_list {
+    display: flex;
+} */
+
+/* #skill .skill_list>li {
+    margin-right: 100px;
+    text-align: center;
+} */
+
+/* #skill .skill_list>li>div {
     width: 50px;
     height: 300px;
     border: 1px solid #000;
@@ -184,7 +300,7 @@
     position: absolute;
     top: 300px;
     left: 0;
-}
+} */
 
 #project{}
 #project .items li{
@@ -192,15 +308,58 @@
     margin-bottom: 32px;
     /* justify-content: space-between; */
 }
-.test-img{
+#project .project-img{
     background-color: #aaa;
     width: 400px;
     height: 300px;
-    margin-right: 4%;
+    margin-right: 2%;
     width: 40%;
+    object-fit: contain;
+    overflow: hidden;
+}
+#project img{
+    width: 100%;
 }
 #project .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 60%;
+    font-weight: 300;
+    box-sizing: border-box;
+
+}
+#project .box-top{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+#project .project-title{
+    font-size: 1.625em;
+    font-weight: 500;
+}
+/* #project .project-btn{
+    border: 1px solid #282828;
+    color: #282828;
+    padding: 8px 24px;
+    border-radius: 1000px;
+    cursor: pointer;
+    
+    transition: 0.3s;
+}
+#project .project-btn:hover{
+    background-color: #282828;
+    color: #fff;
+} */
+#project .project-info{
+    padding: 24px 0;
+    height: 2em;
+    font-size: 1.125em;
+}
+#project .box-bottom{
+    /* font-size: 0.8em; */
+    color: #93959c;
 }
 /* #project_1 .in_project_1 {
     display: flex;
@@ -232,8 +391,14 @@
     box-sizing: border-box;
     margin: 120px 0 0 39px;
 } */
+#end .container{
 
-
+    position: relative;
+}
+#end .form-container{
+    width: 30%;
+    margin: 0 auto ;
+}
 /*메일서버*/
 .field {
     margin-bottom: 10px;
@@ -252,19 +417,37 @@
     width: 100%;
     min-width: 400px;
     line-height: 1.5;
+    border: 1px solid #ccc;
     /* font-size: 14px; */
 }
 .field textarea {
-    height: 200px;
+    height: 160px;
 }
 
 input[type="submit"] {
     display: block;
     margin-top: 16px;
-    padding: 16px 32px;
+    padding: 12px 24px;
     font-size: 1em;
-    background-color: #3b3b3b;
-    color: #fff;
-    border: none;
+    /* background-color: #3b3b3b;
+    color: #fff; */
+    /* border: none; */
     border-radius: 30px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+
+}
+
+.end-info{
+    /* float: right; */
+    font-size: 4em;
+    position: absolute;
+    bottom: 64px ; right: 0;
+    opacity: .5;
+}
+
+footer{
+    height: 240px;
+    background-color: #484848;
 }
