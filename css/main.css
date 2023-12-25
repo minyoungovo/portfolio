@@ -1,14 +1,11 @@
 #wrap {
     width: 100%
 }
-
-#wrap>div {
+section {
     width: 100%;
-    /* height: 100vh */
 }
 
 #wrap>div:nth-child(1) {
-    /*background-color: burlywood;*/
     background: url(./images/main2.jpg) no-repeat 50% 0;
 }
 
@@ -18,9 +15,6 @@
 
 #wrap>div:nth-child(3) {
     background-color: #fff;
-    /* background-color: rgb(224, 225, 230); */
-    /* background: linear-gradient( to bottom, rgb(236, 255, 243), rgb(135, 206, 209) ); */
-    
 }
 
 #wrap>div:nth-child(4) {
@@ -30,40 +24,39 @@
 #wrap>div:nth-child(5) {
     background-color: rgb(239, 239, 239);
 }
-
-/* #wrap>div>div */
 .container {
     margin: 0 auto;
     max-width: 1500px;
     width: 90%;
     padding-bottom: 64px;
-    /* height: 100vh; */
-    /* background-color:rgba(255, 244, 146, 0.5); */
 }
 #main{
     height: 100vh;
 }
 #main .header {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     height: 120px;
+    /* line-height: 120px; */
 }
 
 #main .logo {
-    float: left;
-    margin: 20px 0 0 0;
-    width: 180px;
-    height: 80px;
+    /* width: 180px; */
+    width: 20%;
+    margin-top: 50px;
+    font-size: 2em;
     color: #716E64;
 }
 
 #main .nav {
-    float: right;
+    /* float: right; */
     margin: 50px 0 0 0;
 }
 
 #main .nav li {
     float: left;
-    margin-right: 50px;
+    margin-right: 24px;
 }
 
 #main .nav a {
@@ -448,6 +441,10 @@ input[type="submit"]:hover{
 }
 
 footer{
-    height: 240px;
+    padding: 2% 0;
+    color: #eee;
+    /* height: 240px; */
     background-color: #484848;
+    text-align: center;
+    font-size: 0.8em;
 }
