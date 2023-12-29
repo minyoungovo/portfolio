@@ -1,54 +1,39 @@
 $(function () {
-    var menu = $('.nav > li');
-    var contents = $('#wrap > div');
+    const menu = $('.nav > li');
+    const contents = $('#wrap > div');
 
-    $('.nav> li').click(function (event) {
-        event.preventDefault();
+    $('#q_mn .nav > li').eq(0).addClass('on');
+    scrollMenu(contents);
 
-        var tg = $(this);
-        var i = tg.index();
+    $('.nav> li').click(function (e) {
+        e.preventDefault();
 
-        var section = $('#wrap > div').eq(i);
-        var tt = section.offset().top;
+        let target = $(this);
+        let index = target.index();
+
+        let section = $('#wrap > div').eq(index);
+        let tt = section.offset().top;
 
         $('html, body').stop().animate({ scrollTop: tt });
     });
+
     //메뉴에 addclass를 적용
-    // $(window).scroll(function(){
-    //     var sct = $(window).scrollTop();
-
-    //     $('#wrap > div').each(function(){
-    //         var tg = $(this);
-    //         var i = tg.index();
-    //         if(tg.offset().top <= sct){
-    //             $('.nav > li').removeClass('on');
-    //             $('.nav > li').eq(i).addClass('on');
-    //     }
-    // });
-    // $(window).scroll(function(){
-    // var sct = $(window).scrollTop();
-
-    // contents.each(function(){
-    //     var tg = $(this);
-    //     var i = tg.index();
-    //     if(tg.offset().top <= sct){
-    //         menu.removeClass('on');
-    //         menu.eq(i).addClass('on');
-    //     }
-    // });
-
-    //스크롤 시 애니메이션 효과
-    $(window).scroll( function(){
-        /* 2 */
-        $('.hideme').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            /* 3 */
-            if( bottom_of_window > bottom_of_object/2 ){
-                $(this).animate({'opacity':'1'},500);
-            }
-        }); 
+    $(window).scroll(function(){
+        scrollMenu(contents);
     });
 
-
+    function scrollMenu(){
+        var sct = $(window).scrollTop();
+    
+        contents.each(function(){
+            let selector = $(this);
+            let selectorTop = selector.offset().top;
+            let i = selector.index();
+    
+            if(selectorTop <= sct){
+                $('#q_mn .nav > li').removeClass('on');
+                $('#q_mn .nav > li').eq(i).addClass('on');
+            }
+        });
+    }
 });

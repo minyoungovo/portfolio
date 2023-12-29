@@ -6,13 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조민영 포트폴리오</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
@@ -22,9 +17,9 @@
 <body>
     <div id="wrap">
         <!-- 메인 -->
-        <section id="main">
+        <div id="main">
             <div class="container">
-                <nav class="header">
+                <div class="header">
                     <h1 class="logo">MY</h1>
                     <ul class="nav">
                         <li><a href="#">HOME</a></li>
@@ -33,18 +28,19 @@
                         <li><a href="#">PROJECT</a></li>
                         <li><a href="#">CONTACT AS</a></li>
                     </ul>
-                </nav>
-                <h2 class="">
+
+                </div>
+                <h2>
                     안녕하세요. 👋<br/>
                     저는 조민영입니다.
                 </h2>
                 <p>Front & Back End Developer</p>
             </div>
-        </section>
+        </div>
         <!-- 소개 -->
-        <section id="profile">
+        <div id="profile">
             <div class="profile-container container">
-                <div class="title ">
+                <div class="title">
                     PROFILE
                 </div>
                 <div class="subtitle">
@@ -101,9 +97,9 @@
                 </div>
                 
             </div>
-        </section>
+        </div>
         <!-- 스킬 -->
-        <section id="skill">
+        <div id="skill">
             <div class="skill-container container">
                 <div class="title">
                     SKILL
@@ -115,7 +111,7 @@
                             <div class="box">
                                 <div class="skill-lang">
                                     <div class="box-title">language</div>
-                                    <ul>
+                                    <ul class="item-3">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/html.png" alt="html icon"></div>
@@ -144,7 +140,7 @@
                                 </div>
                                 <div class="skill-plugin">
                                     <div class="box-title">Plugin</div>
-                                    <ul class="">
+                                    <ul  class="item-2">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/jquery.png" alt="css icon"></div>
@@ -166,7 +162,7 @@
 
                                 <div class="skill-tool">
                                     <div class="box-title">Tool</div>
-                                    <ul class="">
+                                    <ul  class="item-1">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/vscode.png" alt="css icon"></div>
@@ -182,7 +178,7 @@
                             <div class="skill-box2">
                                 <div class="subtitle">Version Control</div>
                                 <div class="box">
-                                    <ul>
+                                    <ul class="item-2">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/svn.png" alt="css icon"></div>
@@ -208,7 +204,7 @@
                             <div class="box">
                                 <div class="skill-lang">
                                     <div class="box-title">language</div>
-                                    <ul>
+                                    <ul class="item-4">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/php.png" alt="css icon"></div>
@@ -245,7 +241,7 @@
                                 </div>  
                                 <div class="skill-db">
                                     <div class="box-title">DB</div>
-                                    <ul>
+                                    <ul class="item-2">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/oracle.png" alt="css icon"></div>
@@ -266,7 +262,7 @@
                                 </div>
                                 <div class="skill-server">
                                     <div class="box-title">Server</div>
-                                    <ul>
+                                    <ul class="item-1">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/tomcat.png" alt="css icon"></div>
@@ -279,7 +275,7 @@
                                 </div>
                                 <div class="skill-tool">
                                     <div class="box-title">Tool</div>
-                                    <ul>
+                                    <ul class="item-1">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/eclipse.png" alt="css icon"></div>
@@ -293,7 +289,7 @@
 
                                 <div class="skill-framework">
                                     <div class="box-title">FrameWork</div>
-                                    <ul>
+                                    <ul class="item-4">
                                         <li>
                                             <figure>
                                                 <div><img src="./images/icon/mybatis.png" alt="css icon"></div>
@@ -385,111 +381,114 @@
                 });
 
             </script>
-        </section>
+        </div>
         <!-- 프로젝트1 -->
-        <section id="project">
+        <div id="project">
             <div class="container">
                 <div class="title">
                     PROJECT
                 </div>
+                <div class="tab_menu">
+                    <ul>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">b</a></li>
+                        <li><a href="#">c</a></li>
+                    </ul>
+                </div>
                 <ul class="items">
                     <li>
-                        <!-- <img src="" alt="dd"> -->
-                        <div class="project-img">
-                            <img src="./images/test-img.jpg" alt="">
-                        </div>
                         <div class="box">
-                            <div class="box-top">
-                                <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
-                                <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                            <div class="project-img">
+                                <img src="./images/test-img.jpg" alt="">
                             </div>
-                            <p class="project-info">이 곳에 내용을 입력하세요.</p>
-                            <div class="box-bottom">
-                                <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
-                                <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
-                                <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                            <div class="box-info">
+                                <div class="box-top">   
+                                    <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
+                                    <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                                </div>
+                                <p class="project-info">이 곳에 내용을 입력하세요.</p>
+                                <div class="box-bottom">
+                                    <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
+                                    <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
+                                    <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <!-- <img src="" alt="dd"> -->
-                        <div class="project-img">
-                            <!-- <img src="./images/test-img.jpg" alt=""> -->
-                        </div>
                         <div class="box">
-                            <div class="box-top">
-                                <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
-                                <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                            <div class="project-img">
+                                <img src="./images/test-img.jpg" alt="">
                             </div>
-                            <p class="project-info">이 곳에 내용을 입력하세요.</p>
-                            <div class="box-bottom">
-                                <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
-                                <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
-                                <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                            <div class="box-info">
+                                <div class="box-top">   
+                                    <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
+                                    <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                                </div>
+                                <p class="project-info">이 곳에 내용을 입력하세요.</p>
+                                <div class="box-bottom">
+                                    <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
+                                    <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
+                                    <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <!-- <img src="" alt="dd"> -->
-                        <div class="project-img">
-                            <!-- <img src="./images/test-img.jpg" alt=""> -->
-                        </div>
                         <div class="box">
-                            <div class="box-top">
-                                <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
-                                <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                            <div class="project-img">
+                                <img src="./images/test-img.jpg" alt="">
                             </div>
-                            <p class="project-info">이 곳에 내용을 입력하세요.</p>
-                            <div class="box-bottom">
-                                <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
-                                <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
-                                <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                            <div class="box-info">
+                                <div class="box-top">   
+                                    <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
+                                    <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                                </div>
+                                <p class="project-info">이 곳에 내용을 입력하세요.</p>
+                                <div class="box-bottom">
+                                    <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
+                                    <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
+                                    <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <!-- <img src="" alt="dd"> -->
-                        <div class="project-img">
-                            <!-- <img src="./images/test-img.jpg" alt=""> -->
-                        </div>
                         <div class="box">
-                            <div class="box-top">
-                                <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
-                                <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                            <div class="project-img">
+                                <img src="./images/test-img.jpg" alt="">
                             </div>
-                            <p class="project-info">이 곳에 내용을 입력하세요.</p>
-                            <div class="box-bottom">
-                                <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
-                                <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
-                                <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                            <div class="box-info">
+                                <div class="box-top">   
+                                    <p class="project-title">클리오 홈페이지 카피 웹 제작</p>
+                                    <div class="project-btn btn">이동&nbsp;&nbsp;&nbsp;></div>
+                                </div>
+                                <p class="project-info">이 곳에 내용을 입력하세요.</p>
+                                <div class="box-bottom">
+                                    <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
+                                    <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
+                                    <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+                                </div>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <!-- <div class="in_project_1">
-                <ul class="list">
-                    <li class="output">
-                        <div><img src="../마스크 그룹 1.png" width="100%" alt=""></div>
-                    </li>
-                    <li class="account">
-                        <h3>프로젝트명</h3>
-                        <p>작업기간</p>
-                        <p>작업요점</p>
-                        <p>사용기술</p>
-                        <a href="">코드보기</a>
-                        <a href="">결과물보기</a>
-                    </li>
-                </ul>
-
-            </div> -->
-        </section>
-        <!-- 마무리 -->
-        <section id="end">
+        </div>
+        <div id="end">
             <div class="container">
                 <div class="title">CONTACT AS</div>
                 <div class="form-container">
-                    <form id="form">
+                    <div class="box">
+                        <div class="end-title">
+                            Thank You! 😊
+                        </div>
+                        <div class="end-info">
+                            <p>EMAIL : test@gmail.com</p>
+                            <p>CALL : 010-0000-0000</p>
+                        </div>
+                    </div>
+                    <form class="form">
                         <div class="field">
                             <label for="from_name">from_name</label>
                             <input type="text" name="from_name" id="from_name">
@@ -514,16 +513,11 @@
                     </form>
                     
                 </div>
-                <div class="end-info">
-                    Thank You! 😊
-                </div>
             </div>
-        </section>
+        </div>
         <footer>
-            <p>
-                본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br/>
-                © 2023 Jo-Min-Young. All Rights Reserved.
-            </p>
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+            <p class="copyright">© 2023 Jo-Min-Young. All Rights Reserved.</p>
         </footer>
     </div>
     <!-- 퀵메뉴 -->
@@ -532,7 +526,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Skill</a></li>
-            <li><a href="#">project</a></li>
+            <li><a href="#">Project</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>

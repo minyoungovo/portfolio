@@ -11,28 +11,42 @@ a {text-decoration: none; color: #222;}
     font-size: 2.25em;
     padding: 24px 0 64px 0;
 }
-
 .box{
     background-color: #fff;
     background-color: rgba(255, 255, 255, .3);
     box-shadow: 4px 4px 16px #dbdbdb9a;
-    /* opacity: .5; */
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 48px;
 }
-
+.item-1 li{
+    width: 100%;
+}
+.item-2 li{
+    width: calc(100% / 2 -16px);
+    margin-right: 16px;
+}
+.item-3 li{
+    width: calc(100% / 3 -16px);
+    margin-right: 16px;
+}
+.item-4 li{
+    width: calc(100% / 4 -16px);
+    margin-right: 16px;
+}
+.item-2 li:last-child,
+.item-3 li:last-child,
+.item-4 li:last-child{
+    margin-right: 0px;
+}
 input[type='text'], textarea{
     border-radius: 10px;
     border: none;
     padding: 8px 16px ;
-    font-size: 1.125em;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 textarea{
     resize: none;
 }
-
 .box-title{
     /* padding: 24px 0 8px 0; */
     padding-bottom: 8px;
@@ -49,15 +63,9 @@ textarea{
     border-radius: 1000px;
     cursor: pointer;
     background: none;
-    
     transition: 0.3s;
 }
 .btn:hover{
     background-color: #282828;
     color: #fff;
-}
-
-.hideme
-{
-    opacity:0;
 }
