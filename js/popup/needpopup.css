@@ -1,0 +1,51 @@
+.needpopup-opened {
+	overflow: hidden;
+}
+.needpopup-opened body {
+	overflow: hidden;
+}
+.needpopup-scrolled.needpopup-opened {
+	height: auto;
+}
+.needpopup-scrolled.needpopup-opened body {
+	height: auto;
+}
+.needpopup-scrolled.needpopup-opened body {
+	width: 100%; position: fixed;
+}
+.needpopup_wrapper {
+	background: rgba(0, 0, 0, 0.8); transition:opacity 0.3s; left: 0px; top: 0px; width: 100%; height: 100%; overflow: auto; visibility: hidden; position: fixed; z-index: 999; box-sizing: border-box; opacity: 0; -webkit-box-sizing: border-box; -webkit-transition: opacity .3s ease;
+}
+.needpopup-opened .needpopup_wrapper {
+	visibility: visible; opacity: 1;
+}
+.needpopup-overflow .needpopup_wrapper {
+	padding: 10px;
+}
+.needpopup {
+	margin: 0px auto; padding: 30px; top: 50%; width: 100%; display: none; position: relative; z-index: 9999; max-width: 900px; box-sizing: border-box; opacity: 0; transform: scale(0.1); -webkit-transform: scale(.1, .1); -webkit-box-sizing: border-box;
+}
+.opened.needpopup {
+	transition:opacity 0.5s, transform 0.5s; opacity: 1; transform: scale(1); -webkit-transform: scale(1, 1); -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+}
+.stacked.needpopup {
+	top: 0px !important; margin-top: 0px !important;
+}
+.needpopup-overflow .needpopup {
+	left: 0px; width: auto; margin-left: 0px;
+}
+.needpopup_remover {
+	top: 30px; right: 30px; color: rgb(255, 255, 255); line-height: 0.5; font-size: 40px; text-decoration: none; position: fixed; z-index: 9999;
+}
+.needpopup_remover:hover {
+	color: rgb(204, 204, 204);
+}
+.needpopup_remover::before {
+	content: "X";
+}
+.needpopup .needpopup_remover {
+	top: 10px; right: 10px; color: rgb(0, 0, 0); line-height: 0.5; font-size: 20px;
+}
+.needpopup .needpopup_remover:hover {
+	color: rgb(204, 204, 204);
+}

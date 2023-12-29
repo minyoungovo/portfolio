@@ -8,11 +8,10 @@
     <title>조민영 포트폴리오</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./js/popup/needpopup.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
-    <script src="./js/mail.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -411,6 +410,16 @@
                                     <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
                                     <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
                                     <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+
+                                    <!-- MORE 버튼 -->
+                                    <div class="airbnb popup_btn hvr-underline-from-center">
+                                        <a href="#" data-needpopup-show="#custom-popup1">MORE</a>
+                                    </div>
+
+                                    <!-- 팝업창 -->
+                                    <div class="needpopup" id="custom-popup1" data-needpopup-options="custom">
+                                        <img width="900" src="./images/clio.png">
+                                    </div>     
                                 </div>
                             </div>
                         </div>
@@ -430,6 +439,16 @@
                                     <p class="project-day">작업기간 : 2023.12.01 ~ 2023.12.01(1000일)</p>
                                     <p class="project-personnel">작업 인원 수 : 1명(100%)</p>
                                     <p class="project-lang">사용 언어 : HTML, CSS, Javascript, Jquery</p>
+
+                                    <!-- MORE 버튼 -->
+                                    <div class="airbnb popup_btn hvr-underline-from-center">
+                                        <a href="#" data-needpopup-show="#custom-popup2">MORE</a>
+                                    </div>
+
+                                    <!-- 팝업창 -->
+                                    <div class="needpopup" id="custom-popup2" data-needpopup-options="custom">
+                                        <img width="900" src="./images/test.jpg">
+                                    </div>    
                                 </div>
                             </div>
                         </div>
@@ -475,6 +494,32 @@
                 </ul>
             </div>
         </div>
+
+        <!-- <script src="./js/mail.js"></script> -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init('mQdrFOlf3AY0-mvMS')
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+                .addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    btn.value = 'Sending...';
+
+                    const serviceID = 'service_rjvxjw4';
+                    const templateID = 'template_w5mr1c9';
+
+                    emailjs.sendForm(serviceID, templateID, this)
+                        .then(() => {
+                            btn.value = 'Send Email';
+                            alert('메일보내기 성공');
+                        }, (err) => {
+                            btn.value = 'Send Email';
+                            alert(JSON.stringify(err));
+                        });
+                });
+        </script>
         <div id="end">
             <div class="container">
                 <div class="title">CONTACT AS</div>
@@ -530,6 +575,20 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-</body>
 
+    <script type="text/javascript" src="./js/popup/needpopup.min.js"></script>
+    <script>
+        needPopup.config.custom = {
+                'removerPlace': 'outside',
+                'closeOnOutside': false,
+                onShow: function () {
+                    console.log('needPopup is shown');
+                },
+                onHide: function () {
+                    console.log('needPopup is hidden');
+                }
+            };
+            needPopup.init();
+    </script>
+</body>
 </html>
