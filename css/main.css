@@ -89,7 +89,7 @@
     position: fixed;
     right: 20px;
     top: 300px;
-    z-index: 9999;
+    z-index: 1;
     width: 120px;
     height: 200px;
     border-radius: 15px;
@@ -325,35 +325,39 @@
     margin-bottom: 32px;
 }
 #project .project-img{
-    background-color: #aaa;
+    /* background-color: #aaa;/ */
     margin-right: 2%;
-    width: 90%;
-    height: 400px;
+    width: 50%;
+    /* height: 400px; */
+    height: auto;
     overflow: hidden;
     margin: 0 auto;
 }
 #project img{
-    object-fit: cover;
     width: 100%;
 }
 #project .box{
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
-    width: 60%;
+    width: 90%;
     font-weight: 300;
     box-sizing: border-box;
 }
 #project .box-info{
-    width: 90%;
+    /* width: 90%; */
+    width: 40%;
     margin: 0 auto;
 }
 #project .box-top{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     font-weight: 500;
-    padding: 24px 0;
+    /* padding: 24px 0; */
+}
+#project .number{
+    font-size: 2.5em;
 }
 #project .project-title{
     font-size: 1.625em;
@@ -361,12 +365,30 @@
 }
 #project .project-info{
     padding: 24px 0;
-    height: 2em;
-    font-size: 1.125em;
+    /* height: 2em; */
+    /* font-size: 1.125em; */
 }
 #project .box-bottom{
-    color: #93959c;
+    /* color: #93959c; */
 }
+#project .box-bottom h4{
+    padding-top: 8px;
+}
+#project .project-btn{
+    padding-top: 32px;
+    display: flex;
+}
+#project .project-btn div.btn{
+    margin-right: 16px;
+}
+#project .project-btn div.btn:last-child{
+    margin-right: 0px;
+}
+/* #project .popup_btn, .view-btn{
+    margin-left: 16px;
+    padding: 8px 0 0px 0;
+    border-bottom: 1px solid #222;
+} */
 #end .container{
     position: relative;
 }
@@ -379,7 +401,7 @@
 }
 
 #end .box{
-    width: 45%;
+    width: 40%;
     height: auto;
     background: none;
     box-shadow: none;
@@ -395,7 +417,7 @@
     font-size: 1.25em;
 }
 #end .form{
-    width: 35%;
+    width: 40%;
 }
 /*메일서버*/
 .field {
@@ -432,13 +454,12 @@ input[type="submit"] {
     border-radius: 30px;
     cursor: pointer;
 }
-input[type="submit"]:hover{
-
-}
-
-
-
 footer{
-    height: 240px;
+    /* height: 240px; */
     background-color: #484848;
+    padding: 32px 0;
+}
+footer p{
+    color: #999;
+    text-align: center;
 }
