@@ -9,7 +9,6 @@
 
 #wrap>div:nth-child(1) {
     /*background-color: burlywood;*/
-    background: url(./images/main2.jpg) no-repeat 50% 0;
 }
 
 #wrap>div:nth-child(2) {
@@ -17,7 +16,6 @@
 }
 
 #wrap>div:nth-child(3) {
-    background-color: #fff;
     
 }
 
@@ -123,7 +121,7 @@
 }
 
 #profile {
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 #profile .profile-in{
     display: flex;
@@ -159,7 +157,7 @@
 }
 
 #skill {
-
+    background-color: #f1f1f1;
 }
 
 #skill .skill-in {
@@ -309,7 +307,7 @@
 } */
 
 #project{
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
 }
 #project .tab_menu ul{
     display: flex;
