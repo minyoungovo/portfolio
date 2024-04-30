@@ -305,39 +305,33 @@ header .nav li.on a {
 #end{
     position: relative;
     /* background-color: #b1656b; */
-    /* background: linear-gradient(to right, rgb(197, 95, 95), #99bdff); */
     height: 100vh;
     color: #222;
     z-index: -1;
     overflow: hidden;
-}
-#end .container{
-    position: relative;
+    
+    
 }
 #end .form-container{
     max-width: 70%;
     height: 100%;
     margin: 0 auto;
     text-align: center;
-    /* width: 30%; */
-    /* margin: 0 auto ; */
 }
 #end .info{
     padding: 8vh 0;
     clear: both;
     font-size: 24px;
-    font-weight: 200;
-    opacity: .9;
+    font-weight: 300;
 }
 #end .email{
-    font-size: 20px;
-    font-weight: 1000;
+    width: 40%;
+    font-size: 24px;
+    font-weight: 500;
     color: #222;
-    width: 30%;
-    padding: 12px 24px;
-    border-radius: 100px;
-
-
+    border-radius: 10px;
+    padding: 24px 24px;
+    backdrop-filter: blur(10px);
     margin: 0 auto;
     margin-top: 48px;
 
