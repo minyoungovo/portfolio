@@ -14,7 +14,7 @@
     <script src="./js/scroll.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header id="header">
         <h1 class="logo">MY</h1>
         <ul class="nav">
             <li><a href="#">HOME</a></li>
@@ -142,7 +142,6 @@
                             <span class="scroll_on">2018.03 ~ 2022.02 울산과학대학교 컴퓨터정보학부 소프트웨어개발전공(3년제)</span>
                         </div>
                     </div>
-                   
                 </div>
                 
             </div>
@@ -307,7 +306,6 @@
                 </ul>
             </div>
         </div>
-
         <div id="end">
             <div class="container scroll_wrap">
                 <div class="title scroll_on type_left">CONTACT AS</div>
@@ -319,38 +317,54 @@
                 </div>
             </div>
         </div>
-
-        <!-- <script src="./js/mail.js"></script> -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script>
-            emailjs.init('mQdrFOlf3AY0-mvMS')
-            const btn = document.getElementById('button');
-
-            document.getElementById('form')
-                .addEventListener('submit', function (event) {
-                    event.preventDefault();
-
-                    btn.value = 'Sending...';
-
-                    const serviceID = 'service_rjvxjw4';
-                    const templateID = 'template_w5mr1c9';
-
-                    emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            btn.value = 'Send Email';
-                            alert('메일보내기 성공');
-                        }, (err) => {
-                            btn.value = 'Send Email';
-                            alert(JSON.stringify(err));
-                        });
-                });
-        </script>
-        
         <footer>
             <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
             <p class="copyright">© 2024 Jo-Min-Young. All Rights Reserved.</p>
         </footer>
+
+        <div id="top_btn">
+            <a href="#" title="맨 위로" onclick="goTop()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4L11.6464 3.64645L12 3.29289L12.3536 3.64645L12 4ZM12.5 19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19L12.5 19ZM5.64645 9.64645L11.6464 3.64645L12.3536 4.35355L6.35355 10.3536L5.64645 9.64645ZM12.3536 3.64645L18.3536 9.64645L17.6464 10.3536L11.6464 4.35355L12.3536 3.64645ZM12.5 4L12.5 19L11.5 19L11.5 4L12.5 4Z" fill="#222222"/>
+                </svg>
+            </a>
+        </div>
     </div>
+
+    <script>
+        // 맨 위로 이동
+        function goTop(){ 
+            $('html,body').animate({ scrollTop: 0 }, 500);
+        };
+</script>
+
+
+    <!-- <script src="./js/mail.js"></script> -->
+    <!-- 메일 -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('mQdrFOlf3AY0-mvMS')
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'service_rjvxjw4';
+                const templateID = 'template_w5mr1c9';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('메일보내기 성공');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script> -->
     <script type="text/javascript" src="./js/popup/needpopup.min.js"></script>
     <script>
         needPopup.config.custom = {

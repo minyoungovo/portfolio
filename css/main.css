@@ -248,16 +248,47 @@ header .nav li.on a {
 #project .project-btn div.btn:last-child{
     margin-right: 0px;
 }
+
+
+
+
+#top_btn{
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    border-radius: 1000px;
+    width: 56px !important;
+    height: 56px;
+    /* background-color: rgba(239, 239, 239, .9); */
+    background-color: #fff;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 4px 4px rgba(48, 48, 48, 0.22);
+
+    
+    text-align: center;
+    line-height: 72px;
+
+    overflow: hidden;
+}
+
+#top_btn a{
+    display: block;
+}
+
+#top_btn svg{
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
 #end{
     position: relative;
     height: 100vh;
     color: #222;
     /* z-index: -1; */
     overflow: hidden;
-    
-    /* background: url('./../images/원.png') no-repeat center; */
-    /* background: linear-gradient(to left, #aec7ffd8, #d9ffced2); */
-
 }
 #end:after{
     content : "";
