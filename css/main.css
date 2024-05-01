@@ -118,31 +118,40 @@ header .nav li.on a {
     line-height: 1.75;
     padding: 12px;
 }
-#profile .profile-skill{
-    padding: 24px 0;
-}
 #profile  h3{
     padding: 20px 0 12px 0;
     text-transform:uppercase;
+}
+#profile  h3::before{
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 3px;
+    height: 16px;
+    background-color: #444;
+    font-weight: 1000;
 }
 #profile span{
     margin-left: 12px;
     font-weight: 400;
 }
-#profile .profile-skill span::after{
-    content: ' | ';
-    font-weight: 1000;
-    padding: 0 4px ;
+#profile .profile-skill{
+    padding: 24px 0;
+}
+#profile .profile-skill span{
+    width: 150px;
+    display: inline-block;
 }
 #profile .profile-skill p{
     display: inline-block;
     border-radius: 30px;
-    /* border: 1px solid #9a9a9a; */
-    margin: 4px 2px;
-    padding: 4px 12px;
+    border: 1px solid #b3b3b3;
+    margin: 4px 1px;
+    padding: 2px 14px;
     font-size: 14px;
     /* color: #424242; */
-    background-color: #eeeeee;
+    /* background-color: #ebebeb; */
+    font-size: 13px;
     color: #222;
 }
 #profile .profile-name::after{
@@ -249,45 +258,10 @@ header .nav li.on a {
     margin-right: 0px;
 }
 
-
-
-
-#top_btn{
-    position: fixed;
-    right: 32px;
-    bottom: 32px;
-    border-radius: 1000px;
-    width: 56px !important;
-    height: 56px;
-    /* background-color: rgba(239, 239, 239, .9); */
-    background-color: #fff;
-    backdrop-filter: blur(100px);
-    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 4px 4px rgba(48, 48, 48, 0.22);
-
-    
-    text-align: center;
-    line-height: 72px;
-
-    overflow: hidden;
-}
-
-#top_btn a{
-    display: block;
-}
-
-#top_btn svg{
-    width: 32px;
-    height: 32px;
-}
-
-
-
-
 #end{
     position: relative;
     height: 100vh;
     color: #222;
-    /* z-index: -1; */
     overflow: hidden;
 }
 #end:after{
@@ -302,7 +276,6 @@ header .nav li.on a {
     background: url('./../images/circle.png') no-repeat center;
     opacity: .5;
     z-index: -1;
-
 }
 
 #end .container{
@@ -321,14 +294,14 @@ header .nav li.on a {
 }
 #end .email{
     width: 40%;
-    font-size: 24px;
-    font-weight: 500;
-    color: #222;
-    border-radius: 10px;
-    padding: 24px 24px;
-    backdrop-filter: blur(10px);
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 32px;
+    padding: 24px 24px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #222;
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(10px); */
 }
 
 #end .circle{

@@ -12,10 +12,6 @@ a {text-decoration: none; color: #222;}
     padding: 24px 0 64px 0;
 }
 .box{
-    /* background-color: #fff;
-    background-color: rgba(255, 255, 255, .3);
-    box-shadow: 4px 4px 16px #dbdbdb9a;
-    border-radius: 15px; */
     padding: 48px;
 }
 .item-1 li{
@@ -55,16 +51,6 @@ textarea{
     color: #333;
     text-align: left;
 }
-
-/* .btn{
-    border: 1px solid #282828;
-    color: #282828;
-    padding: 4px 16px;
-    border-radius: 1000px;
-    cursor: pointer;
-    background: none;
-    transition: 0.3s;
-} */
 .btn a, input[type='submit']{
     display: block;
     border: 1px solid #aaaaaa;
@@ -84,9 +70,38 @@ textarea{
 /* 스크롤 */
 .scroll_wrap {overflow: hidden;}
 .scroll_on {opacity: 0;transition: all 1s;}
-/* .scroll_on {padding:50px 0;font-size: 24px;font-weight:700;text-align: center;opacity: 0;transition: all 1s;} */
 .scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
 .scroll_on.type_top {transform: translate(0, -50px);}
 .scroll_on.type_bottom {transform: translate(0, 50px);}
 .scroll_on.type_left {transform: translate(-50px, 0);}
 .scroll_on.type_right {transform: translate(50px, 0);}
+
+/* 맨 위로 가기 버튼 */
+#top_btn{
+    visibility: hidden;
+
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 56px !important;
+    height: 56px;
+
+    overflow: hidden;
+    z-index: 999;
+
+    background-color: #fff;
+    backdrop-filter: blur(100px);
+    border: 1px solid #e0e0e0;
+    border-radius: 1000px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.15), 0 2px 8px rgba(48, 48, 48, 0.15);
+    
+    text-align: center;
+    line-height: 72px;
+}
+#top_btn a{
+    display: block;
+}
+#top_btn svg{
+    width: 32px;
+    height: 32px;
+}
