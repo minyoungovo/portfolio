@@ -80,3 +80,13 @@ textarea{
     background-color: #282828;
     color: #fff;
 }
+
+/* 스크롤 */
+.scroll_wrap {overflow: hidden;}
+.scroll_on {opacity: 0;transition: all 1s;}
+/* .scroll_on {padding:50px 0;font-size: 24px;font-weight:700;text-align: center;opacity: 0;transition: all 1s;} */
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_top {transform: translate(0, -50px);}
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+.scroll_on.type_left {transform: translate(-50px, 0);}
+.scroll_on.type_right {transform: translate(50px, 0);}
