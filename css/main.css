@@ -38,7 +38,7 @@ header .nav a {
 
 header .nav li.on a {
     color: #121b45;
-    font-weight: 800;
+    font-weight: 600;
 }
 #wrap {
     width: 100%
@@ -58,7 +58,7 @@ header .nav li.on a {
 
 .container {
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 85%;
     width: 100%;
     padding-bottom: 64px;
 }
@@ -67,12 +67,12 @@ header .nav li.on a {
     width: 100%;
     padding: 30vh 0 0 0;
     font-size: 80px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 86px;
     box-sizing: border-box;
 }
 #main .sub{
-    margin-top: 40px;
+    margin-top: 24px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -101,22 +101,17 @@ header .nav li.on a {
     /* background-color: #eee; */
     
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 1.8;
 }
 #profile .profile-in{
     display: flex;
 }
 #profile .info-container{
-    /* width: 100%; */
-    
     margin: 0 auto;
-    width: 60%;
+    width: 55%;
 }
-#profile .info-container li{
-    display: flex;
-    justify-content: space-between;
-    line-height: 1.75;
-    padding: 12px;
+#profile .info-container > div{
+    padding: 24px 0;
 }
 #profile  h3{
     padding: 20px 0 12px 0;
@@ -126,7 +121,7 @@ header .nav li.on a {
     content: "";
     display: inline-block;
     margin-right: 8px;
-    width: 3px;
+    width: 3.5px;
     height: 16px;
     background-color: #444;
     font-weight: 1000;
@@ -139,7 +134,7 @@ header .nav li.on a {
     padding: 24px 0;
 }
 #profile .profile-skill span{
-    width: 150px;
+    width: 200px;
     display: inline-block;
 }
 #profile .profile-skill p{
@@ -153,9 +148,6 @@ header .nav li.on a {
     /* background-color: #ebebeb; */
     font-size: 13px;
     color: #222;
-}
-#profile .profile-name::after{
-    content: ' | ';
 }
 #profile .profile-info{
     margin: 0 auto;
@@ -175,29 +167,57 @@ header .nav li.on a {
 #profile .profile-intro p{
     margin-left: 8px;
 }
-
-
 #project{
     /* background-color: #f2f2f2; */
+    height: 100vh;
+    position: relative;
+    /* background-color: #eee; */
 }
+
 #project .tab_menu ul{
-    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-bottom: 24px;
+    background-color: rgba(256, 256, 256, .5);
+    padding: 16px;
+    border-radius: 10px;
 }
 #project .tab_menu li{
-    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 24px;
+    border-radius: 10px;
+    /* display: flex; */
 }
+#project .tab_menu li.active {
+    font-weight: 600;
+    color: #cd3b3b;
+    background-color: #ffeaea;
+    text-decoration: underline;
+}
+#project .tab_menu li:hover{
+
+    font-weight: 600;
+}
+
 #project .items{
     width: 100%;
     margin: 0 auto;
 }
 #project .items li{
+    display: none;
     margin-bottom: 32px;
 }
+#project .items li.show {
+    display: block;
+}
 #project .project-img{
-    /* background-color: #aaa;/ */
     margin-right: 2%;
-    width: 40%;
-    /* height: 400px; */
+    width: 45%;
     height: auto;
     overflow: hidden;
     margin: 0 auto;
@@ -207,7 +227,7 @@ header .nav li.on a {
 }
 #project .box{
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -215,23 +235,22 @@ header .nav li.on a {
 }
 #project .box-info{
     margin: 0 auto;
-    width: 45%;
+    width: 35%;
     word-break:keep-all;
 }
 #project .box-top{
-    /* display: flex; */
-    /* justify-content: space-between; */
     font-weight: 500;
-    /* padding: 24px 0; */
 }
 #project .number{
     font-size: 36px;
     font-weight: 300;
-    color: #757575;
-
+    /* color: #757575; */
+    color: #cd3b3b;
+    font-family: 'TTHakgyoansimJiugaeR';
 }
 #project .project-title{
     font-size: 24px;
+    font-weight: 600;
 }
 #project .project-info{
     padding: 24px 0;
@@ -243,6 +262,7 @@ header .nav li.on a {
 }
 #project .box-bottom h4{
     padding: 8px 0 2px 0;
+    font-weight: 600;
 }
 #project .box-bottom p{
     font-size: 14px;
@@ -260,7 +280,7 @@ header .nav li.on a {
 
 #end{
     position: relative;
-    height: 100vh;
+    height: 90vh;
     color: #222;
     overflow: hidden;
 }
@@ -298,11 +318,39 @@ header .nav li.on a {
     margin-top: 32px;
     padding: 24px 24px;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: 500;
     color: #222;
-    /* border-radius: 10px; */
-    /* backdrop-filter: blur(10px); */
+    cursor: pointer;
+
+    border: none;
+   
+    background-image: linear-gradient(92deg, #ce0f0f, #3d3afe);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: hue 2s infinite linear;
 }
+
+#end .email:hover{
+    /* background-image: #222; */
+    /* color: #222; */
+    /* animation: none; */
+    animation-play-state: paused;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+@-webkit-keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-360deg);
+    }
+
+}
+
 
 #end .circle{
     width: 100%; height: 100%;
@@ -314,10 +362,10 @@ header .nav li.on a {
 
 footer{
     background-color: #222;
-    padding: 32px 0;
+    padding: 48px 0;
 }
 footer p{
     color: #afafaf;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }

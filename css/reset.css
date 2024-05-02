@@ -3,9 +3,11 @@ body{font-size: 16px; color: #222; font-family: 'Noto Sans KR', sans-serif;}
 ul,li {list-style: none;}
 a {text-decoration: none; color: #222;}
 .title{
-    padding: 200px 0 48px 0;
+    /* margin-top: 140px; */
+    padding: 124px 0 48px 0;
     font-size: 48px;
     font-weight: 800;
+    box-sizing: border-box;
 }
 .subtitle{
     font-size: 24px;
@@ -105,3 +107,7 @@ textarea{
     width: 32px;
     height: 32px;
 }
+
+
+.cursor { position: absolute; top: 0; left: 0; width: 40px; height: 40px; background-color: #331b1b; border-radius: 50%; z-index: 9999; pointer-events: none; transition: transform 200ms ease-out; mix-blend-mode: difference; } 
+.cursor.cursor_expand { transform: scale(1.5); } 

@@ -6,12 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조민영 포트폴리오</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/webfont.css">
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./js/popup/needpopup.css">
+    
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
+
+    
 </head>
 <body>
     <header id="header">
@@ -69,6 +80,12 @@
                 <div class="title scroll_on type_left">PROFILE</div>
                 <div class="profile-in">
                     <div class="info-container scroll_wrap">
+                        <div class="profile-name">
+                            <h3 class="scroll_on">name</h3>
+                            <span class="scroll_on">
+                                조민영
+                            </span>
+                        </div>
                         <div class="profile-intro">
                             <h3 class="scroll_on">introduce</h3>
                             <p class="scroll_on">
@@ -147,9 +164,19 @@
                 <div class="title scroll_on type_left">
                     PROJECT
                 </div>
+
+                <div class="tab_menu">
+                    <ul class="list">
+                        <li class="tab-button active">1. 2024 포트폴리오</li>
+                       <li class="tab-button">2. 클리오</li>
+                       <li class="tab-button">3. 부영그룹</li>
+                       <li class="tab-button">4. 이디야</li>
+                     </ul>
+                </div>
+
                 <ul class="items">
-                    <li>
-                        <div class="box scroll_on">
+                    <li class="show">
+                        <div class="box">
                             <div class="project-img">
                                 <img src="./images/project/portfolio_mockup.png" alt="개인 포트폴리오 웹 페이지">
                             </div>
@@ -186,7 +213,7 @@
 
 
                     <li>
-                        <div class="box scroll_on">
+                        <div class="box">
                             <div class="project-img">
                                 <img src="./images/project/clio_mockup.png" alt="클리오 웹 페이지">
                             </div>
@@ -226,7 +253,7 @@
                     </li>
 
                     <li>
-                        <div class="box scroll_on">
+                        <div class="box">
                             <div class="project-img">
                                 <img src="./images/project/booyoung_mockup.png" alt="부영그룹 웹 페이지">
                             </div>
@@ -263,7 +290,7 @@
                     </li>
 
                     <li>
-                        <div class="box scroll_on">
+                        <div class="box">
                             <div class="project-img">
                                 <img src="./images/project/ediya_mockup.png" alt="이디야 웹 페이지">
                             </div>
@@ -367,5 +394,10 @@
             };
             needPopup.init();
     </script>
+
+    
+    <!-- <div class="cursor"></div> -->
 </body>
 </html>
+
+<!-- <script src="./js/mousecusor.js"></script> -->

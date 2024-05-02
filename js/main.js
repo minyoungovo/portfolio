@@ -18,9 +18,6 @@ $(function () {
         let section = $('#wrap > div').eq(index);
         let tt = section.offset().top;
 
-        console.log(section);
-        console.log(tt);
-
         $(this).addClass('on');
         $('html, body').stop().animate({ scrollTop: tt });
     });
@@ -42,6 +39,21 @@ $(function () {
                 $('header .nav > li').removeClass('on');
                 $('header .nav > li').eq(i).addClass('on');
             }
+        });
+    }
+
+
+    for(let i = 0; i < $('#project .tab-button').length; i++){
+        projectTab(i); 
+    }
+        
+    function projectTab(e){
+        $('#project .tab-button').eq(e).click(function(){
+            $('#project .tab-button').removeClass('active');
+            $('#project .items > li').removeClass('show').fadeOut("fast");
+
+            $('#project .tab-button').eq(e).addClass('active');
+            $('#project .items > li').eq(e).fadeIn("fast").addClass('show');
         });
     }
 });
