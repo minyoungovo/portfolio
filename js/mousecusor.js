@@ -45,3 +45,5 @@
 //     // $cursor 요소의 CSS 'transform' 속성을 업데이트하여 마우스 위치에 따라 이동시킵니다.
 //     $cursor.css('transform', `translate(${mouseX}px, ${mouseY}px)`);
 // });
+
+
